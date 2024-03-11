@@ -1,0 +1,8 @@
+.charts {
+  display: flex;
+  gap: 20px;
+  padding-top: 10px;
+}
+.chart {
+  width: 50%;
+}

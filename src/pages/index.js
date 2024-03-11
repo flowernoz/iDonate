@@ -1,0 +1,9 @@
+export { default as Dashboard } from "./dashboard/index";
+export { default as Messages } from "./messages/index";
+export { default as Payments } from "./payments/index";
+export { default as Profile } from "./profile/index";
+export { default as Settings } from "./settings/index";
+export { default as TopDonators } from "./topDonators/index";
+export { default as WithdrawMoney } from "./withdrawMoney/index";
+export { default as CollectMoney } from "./collectMoney/index";
+export { default as DonatPage } from "./donatPage/index";
