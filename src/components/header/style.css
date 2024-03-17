@@ -10,8 +10,17 @@ header {
   justify-content: space-between;
   padding: 25px;
   border-bottom: 1px solid var(--bgLight);
+  z-index: 3;
 }
-header svg {
+.head_left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.head_left .moniker {
+  display: none;
+}
+.head_left svg {
   cursor: pointer;
 }
 .test {

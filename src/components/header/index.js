@@ -15,7 +15,13 @@ function Header() {
   const { toggle } = useContext(MyBooleanContext);
   return (
     <header>
-      <IconMenu2 onClick={toggle} />
+      <div className="head_left">
+        <h1 className="moniker">
+          <img className="logo" src={logo} alt="logo" />
+          iDonate
+        </h1>
+        <IconMenu2 onClick={toggle} />
+      </div>
       <>
         <button onClick={() => setOpenmodal(!openModal)} className="test">
           <img className="logo" src={logo} alt="logo" /> Test

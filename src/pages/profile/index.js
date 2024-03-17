@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./style.css";
+
 function Profile() {
   const [imageUrl, setImageUrl] = useState(null);
   const handleImg = (event) => {
     const selected = event.target.files[0];
-
     const imageUrl = URL.createObjectURL(selected);
     setImageUrl(imageUrl);
   };

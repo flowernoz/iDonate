@@ -7,7 +7,6 @@ export const MyBooleanContext = createContext({
 
 export const MyBooleanProvider = ({ children }) => {
   const [isToggled, setIsToggled] = useState(false);
-
   const toggle = () => setIsToggled(!isToggled);
 
   return (

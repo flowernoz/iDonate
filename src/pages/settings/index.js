@@ -11,7 +11,6 @@ function Settings() {
   // SET GIF
   const handleImg = (event) => {
     const selected = event.target.files[0];
-
     if (selected.size > 1048576) {
       setErrorMessage("File size exceeds 1MB limit.");
       return;
@@ -24,7 +23,6 @@ function Settings() {
   // SET AUDIO
   const handleAudio = (event) => {
     const selected = event.target.files[0];
-
     setSelectedFile(selected);
     const audioUrl = URL.createObjectURL(selected);
     setAudioUrl(audioUrl);

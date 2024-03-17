@@ -14,19 +14,19 @@ function WithdrawMoney() {
         </button>
       </form>
       <p className="title">oxirgi to'lovlar</p>
-      <Table
-        title={[
-          "Summa",
-          "xizmat haqqi",
-          "jami",
-          "foiz",
-          "pul yechgandan keyingi balans",
-          "pul yechishdan avvalgi balans",
-          "karta raqami",
-          "status",
-          "amal",
-        ]}
-      />
+        <Table
+          title={[
+            "Summa",
+            "xizmat haqqi",
+            "jami",
+            "foiz",
+            "pul yechgandan keyingi balans",
+            "pul yechishdan avvalgi balans",
+            "karta raqami",
+            "status",
+            "amal",
+          ]}
+        />
     </div>
   );
 }

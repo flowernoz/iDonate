@@ -6,11 +6,9 @@
   margin-bottom: 15px;
 }
 input[type="checkbox"] {
-  width: auto;
   width: 18px;
   height: 18px;
   outline: 2px solid var(--indigo);
-  background-color: currentColor !important;
   accent-color: var(--indigo);
   transition: 0.3s;
 }

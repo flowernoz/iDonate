@@ -45,24 +45,28 @@ const data = [
 export default function Sidebar() {
   const { isToggled } = useContext(MyBooleanContext);
   return (
-    <nav
-      className="navbar"
+    <aside
+      className="sidebar"
       style={isToggled ? { width: "60px" } : { width: "250px" }}
     >
       <div className="header">
-        <h1 className="code">
+        <h1 className="moniker">
           <img className="logo" src={logo} alt="logo" />
           {!isToggled && "iDonate"}
         </h1>
       </div>
-      <div className="navBody">
+      <div className="aside_body">
         {data.map((item, inx) => (
-          <NavLink className="control" to={item.link} key={inx}>
+          <NavLink
+            className="aside_link"
+            to={item.link}
+            key={inx}
+          >
             <item.icon />
             {!isToggled && item.label}
           </NavLink>
         ))}
       </div>
-    </nav>
+    </aside>
   );
 }

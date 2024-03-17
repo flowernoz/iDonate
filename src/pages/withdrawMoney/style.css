@@ -13,7 +13,6 @@ label {
   font-size: 16px;
   color: var(--textColor);
 }
-
 textarea,
 form input {
   width: 100%;
@@ -25,6 +24,6 @@ form input {
   color: var(--textColor);
 }
 textarea:focus,
-input:focus:not(.checkbox) {
+input:focus:not(.checkbox, input[type="file"]) {
   outline: 1px solid rgb(107, 177, 238);
 }

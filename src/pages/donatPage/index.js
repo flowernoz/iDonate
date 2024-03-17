@@ -14,7 +14,7 @@ function DonatPage() {
       </form>
       <form>
         <label>Donat sahifa matni</label>
-        <textarea rows={4}>
+        <textarea  rows={4}>
           Donat qilib sevimli strimer yoki ijodkoringizni qo'llab quvvatlang!
         </textarea>
         <label>Donat knopka matni</label>

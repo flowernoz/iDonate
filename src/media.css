@@ -1,0 +1,75 @@
+@media (max-width: 1100px) {
+  section {
+    margin-left: 75px;
+  }
+  .head_left .moniker {
+    display: flex;
+  }
+  .test img {
+    display: none;
+  }
+  .header_select button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+  aside.sidebar {
+    position: fixed;
+    top: 55px;
+    transition: all 0.3s;
+  }
+  .header {
+    display: none;
+  }
+  .footer {
+    padding-left: 75px;
+  }
+}
+@media (max-width: 800px) {
+  .charts {
+    flex-direction: column;
+  }
+  .chart {
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .title {
+    margin-bottom: 20px;
+  }
+  .btn {
+    padding: 8px 14px;
+  }
+  h6 {
+    font-size: 14px;
+    font-weight: bolder;
+  }
+  th,
+  td {
+    padding: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  ::placeholder,
+  label {
+    font-size: 14px;
+  }
+  textarea,
+  form input {
+    padding: 10px 16px;
+  }
+  .logo {
+    width: 25px;
+    height: 25px;
+  }
+  .moniker {
+    font-size: 20px;
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+  }
+}

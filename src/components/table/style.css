@@ -1,11 +1,15 @@
-table {
+.table_container {
+  width: 100%;
+  overflow: auto;
+}
+.table {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 th,
 td {
   padding: 20px 15px;
-  flex-grow: 1;
   vertical-align: bottom;
   text-align: left;
   font-weight: 500;

@@ -1,4 +1,5 @@
 .charts {
+  width: 100%;
   display: flex;
   gap: 20px;
   padding-top: 10px;
