@@ -1,11 +1,10 @@
 .table_container {
   width: 100%;
-  overflow: auto;
+  overflow-x: auto;
 }
 .table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed;
 }
 th,
 td {

@@ -6,9 +6,9 @@ export const MyBooleanContext = createContext({
 });
 
 export const MyBooleanProvider = ({ children }) => {
-  const [isToggled, setIsToggled] = useState(false);
-  const toggle = () => setIsToggled(!isToggled);
-
+  const width = window.innerWidth <= 1100;
+  let [isToggled, setIsToggled] = useState(width ? true : false);
+  let toggle = () => setIsToggled(!isToggled);
   return (
     <MyBooleanContext.Provider value={{ isToggled, toggle }}>
       {children}

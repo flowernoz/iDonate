@@ -3,13 +3,18 @@ import { RootRoutes } from "./routes";
 import Sidebar from "./components/sidebar";
 import Header from "./components/header";
 import Footer from "./components/footer";
-
+import { MyBooleanContext } from "./context";
+import { useContext } from "react";
 function App() {
+  const width = window.innerWidth <= 1100;
+  const { isToggled, toggle } = useContext(MyBooleanContext);
   return (
     <div className="App">
       <div className="container">
         <Sidebar />
-        <main>
+        <main
+          onClick={!isToggled && width && toggle}
+        >
           <Header />
           <section>
             <Routes>

@@ -20,6 +20,17 @@
   .header {
     display: none;
   }
+  .dashboard .table_container {
+    min-width: max-content;
+  }
+  th,
+  td {
+    max-width: 100px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .footer {
     padding-left: 75px;
   }
@@ -43,14 +54,6 @@
     font-size: 14px;
     font-weight: bolder;
   }
-  th,
-  td {
-    padding: 10px;
-    font-size: 14px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
   ::placeholder,
   label {
     font-size: 14px;
@@ -65,6 +68,11 @@
   }
   .moniker {
     font-size: 20px;
+  }
+  .chart {
+    min-width: 400px;
+    cursor: zoom-in;
+    padding-bottom: 20px;
   }
   .footer {
     flex-direction: column;

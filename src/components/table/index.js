@@ -8,7 +8,9 @@ function Table({ title, data }) {
           <tr>
             <th>#</th>
             {title?.map((i, inx) => (
-              <th key={inx}>{i}</th>
+              <th title={i} key={inx}>
+                {i}
+              </th>
             ))}
           </tr>
         </thead>
@@ -16,8 +18,8 @@ function Table({ title, data }) {
           {data?.map((i, inx) => (
             <tr key={inx}>
               <td>{inx + 1}</td>
-              <td>{i.ism ? i.ism : <IconMinus />}</td>
-              <td>{i.tolov ? i.tolov : <IconMinus />}</td>
+              <td title={i?.ism}>{i.ism ? i.ism : <IconMinus />}</td>
+              <td title={i?.tolov}>{i.tolov ? i.tolov : <IconMinus />}</td>
             </tr>
           ))}
         </tbody>
