@@ -3,12 +3,12 @@ function CollectMoney() {
   return (
     <div>
       <p className="title">Yangi</p>
-      <form>
-        <label>nomi</label>
+      <form className="form">
+        <label className="label">nomi</label>
         <input type="text" placeholder="Nomi" />
-        <label>Ko'zlangan summa</label>
+        <label className="label">Ko'zlangan summa</label>
         <input type="number" min={1} placeholder="Ko'zlangan summa" />
-        <label>yig'ilgan summa</label>
+        <label className="label">yig'ilgan summa</label>
         <input type="number" min={1} placeholder="Yig'ilgan summa" />
         <label className="custom_checkbox">
           <input className="checkbox" type="checkbox" />

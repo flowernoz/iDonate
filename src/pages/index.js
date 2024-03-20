@@ -7,3 +7,4 @@ export { default as TopDonators } from "./topDonators/index";
 export { default as WithdrawMoney } from "./withdrawMoney/index";
 export { default as CollectMoney } from "./collectMoney/index";
 export { default as DonatPage } from "./donatPage/index";
+export { default as Login } from "./auth/Login";

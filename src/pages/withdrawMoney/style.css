@@ -3,18 +3,18 @@
   flex-direction: column;
   gap: 15px;
 }
-form {
+.form {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-label {
+.label {
   font-size: 16px;
   color: var(--textColor);
 }
 textarea,
-form input {
+.form input {
   width: 100%;
   background: var(--inputBg);
   padding: 14px 22px;
@@ -24,6 +24,6 @@ form input {
   color: var(--textColor);
 }
 textarea:focus,
-input:focus:not(.checkbox, input[type="file"]) {
+input:focus:not(.checkbox, input[type="file"], .login_input input) {
   outline: 1px solid rgb(107, 177, 238);
 }

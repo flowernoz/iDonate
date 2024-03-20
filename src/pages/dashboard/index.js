@@ -13,7 +13,7 @@ export default function Dashboard() {
   return (
     <div className="dashboard">
       <p className="title">Boshqaruv paneli</p>
-      <label>Oxirgi 20 kun bo'yicha donatlar</label>
+      <label className="label">Oxirgi 20 kun bo'yicha donatlar</label>
       <div className="charts">
         <div className="chart">
           <Chart dataNumber={dataNumber} title={"Summasi"} color={color} />

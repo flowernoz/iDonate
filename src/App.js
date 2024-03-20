@@ -1,37 +1,19 @@
-import { Routes, Route } from "react-router-dom";
-import { RootRoutes } from "./routes";
-import Sidebar from "./components/sidebar";
-import Header from "./components/header";
-import Footer from "./components/footer";
-import { MyBooleanContext } from "./context";
-import { useContext } from "react";
+import { Navigate } from "react-router-dom";
+import Auth from "./pages/auth";
+import Layout from "./routes/Layout";
+
 function App() {
-  const width = window.innerWidth <= 1100;
-  const { isToggled, toggle } = useContext(MyBooleanContext);
-  return (
-    <div className="App">
-      <div className="container">
-        <Sidebar />
-        <main
-          onClick={!isToggled && width && toggle}
-        >
-          <Header />
-          <section>
-            <Routes>
-              {RootRoutes.map((route) => (
-                <Route
-                  key={route.path}
-                  path={route.path}
-                  element={route.element}
-                />
-              ))}
-            </Routes>
-          </section>
-          <Footer />
-        </main>
-      </div>
-    </div>
-  );
+  const auth = localStorage.getItem("token");
+  if (auth) {
+    return <Layout />;
+  } else {
+    return (
+      <>
+        <Auth />
+        <Navigate to={"/login"} />
+      </>
+    );
+  }
 }
 
 export default App;

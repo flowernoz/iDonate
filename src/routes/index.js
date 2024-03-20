@@ -16,35 +16,35 @@ export const RootRoutes = [
     element: <Dashboard />,
   },
   {
-    path: "/messages",
+    path: "messages",
     element: <Messages />,
   },
   {
-    path: "/top-donators",
+    path: "top-donators",
     element: <TopDonators />,
   },
   {
-    path: "/payment-history",
+    path: "payment-history",
     element: <Payments />,
   },
   {
-    path: "/withdraw-money",
+    path: "withdraw-money",
     element: <WithdrawMoney />,
   },
   {
-    path: "/collect-money",
+    path: "collect-money",
     element: <CollectMoney />,
   },
   {
-    path: "/donat-page",
+    path: "donat-page",
     element: <DonatPage />,
   },
   {
-    path: "/settings",
+    path: "settings",
     element: <Settings />,
   },
   {
-    path: "/profile",
+    path: "profile",
     element: <Profile />,
   },
 ];

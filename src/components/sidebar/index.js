@@ -1,53 +1,18 @@
-import {
-  IconTriangleSquareCircle,
-  IconLayoutBoardSplit,
-  IconMessage,
-  IconCashBanknote,
-  IconArrowUpRight,
-  IconCashBanknoteOff,
-  IconReceiptDollar,
-  IconNotebook,
-  IconUserCircle,
-} from "@tabler/icons-react";
-import "./style.css";
 import { useContext } from "react";
-import { MyBooleanContext } from "../../context";
-import logo from "../../assets/applogo.png";
 import { NavLink } from "react-router-dom";
-const data = [
-  { label: "Boshqaruv paneli", icon: IconLayoutBoardSplit, link: "/" },
-  {
-    label: "Xabarlar paneli",
-    icon: IconMessage,
-    link: "/messages",
-  },
-  {
-    label: "To'lovlar tarixi",
-    icon: IconCashBanknote,
-    link: "/payment-history",
-  },
-  { label: "Top donaterlar", icon: IconArrowUpRight, link: "/top-donators" },
-  {
-    label: "Pulni yechish",
-    icon: IconCashBanknoteOff,
-    link: "/withdraw-money",
-  },
-  { label: "Pul yig'ish", icon: IconReceiptDollar, link: "/collect-money" },
-  { label: "Donat sahifasi", icon: IconNotebook, link: "/donat-page" },
-  {
-    label: "Vidjet sozlamalari",
-    icon: IconTriangleSquareCircle,
-    link: "/settings",
-  },
-  { label: "Profil", icon: IconUserCircle, link: "/profile" },
-];
+import { MyBooleanContext } from "../../context";
+import "./style.css";
+import logo from "../../assets/applogo.png";
+import { data } from "../../static/links";
 
 export default function Sidebar() {
   const { isToggled } = useContext(MyBooleanContext);
+  const width = window.innerWidth <= 700;
   return (
     <aside
       className="sidebar"
-      style={isToggled ? { width: "60px" } : { width: "250px" }}
+      style={
+        ({ width: isToggled ? "60px" : "250px" })}
     >
       <div className="header">
         <h1 className="moniker">
@@ -57,11 +22,7 @@ export default function Sidebar() {
       </div>
       <div className="aside_body">
         {data.map((item, inx) => (
-          <NavLink
-            className="aside_link"
-            to={item.link}
-            key={inx}
-          >
+          <NavLink className="aside_link" to={item.link} key={inx}>
             <item.icon />
             {!isToggled && item.label}
           </NavLink>

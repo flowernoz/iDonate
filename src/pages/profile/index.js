@@ -12,7 +12,7 @@ function Profile() {
   return (
     <div>
       <p className="title">Profil sozlamalari</p>
-      <form>
+      <form className="form">
         <h6>Strimer haqida ma'lumotlar</h6>
         <span>Ismi: Test</span>
         <span>Username: test_admin</span>
@@ -20,24 +20,26 @@ function Profile() {
         <button className="btn btn_success">Pulni yechib olish</button>
       </form>
       <h6 className="input_title">Profil ma'lumotlari</h6>
-      <form>
-        <label>Ism</label>
+      <form className="form">
+        <label className="label">Ism</label>
         <input type="text" placeholder="Test" />
         <button className="btn btn_indigo">Saqlash</button>
       </form>
       <h6>Rasmni o'zgartirish</h6>
-      <form>
-        {imageUrl && <img className="profile_img" src={imageUrl} alt="Your profile" />}
+      <form className="form">
+        {imageUrl && (
+          <img className="profile_img" src={imageUrl} alt="Your profile" />
+        )}
         <input accept="image/*" onChange={handleImg} type="file" />
         <button className="btn btn_indigo">Saqlash</button>
       </form>
       <h6>Parolni o'zgartirish</h6>
-      <form>
-        <label>hozirgi parol</label>
+      <form className="form">
+        <label className="label">hozirgi parol</label>
         <input type="text" placeholder="Hozirgi parol" />
-        <label>yangi parol</label>
+        <label className="label">yangi parol</label>
         <input type="text" placeholder="Yangi parol" />
-        <label>yangi parol takroran</label>
+        <label className="label">yangi parol takroran</label>
         <input type="text" placeholder="Yangi parol takroran" />
         <button className="btn btn_indigo">Saqlash</button>
       </form>

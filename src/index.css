@@ -69,24 +69,24 @@ button {
   padding: 14px 24px;
   margin: 8px 0;
   border-radius: 4px;
-  transition: all 0.2s;
+  transition: all 0.2s ease-in-out;
 }
-.btn.btn_danger {
+.btn_danger {
   background: var(--danger);
 }
-.btn.btn_danger:hover {
+.btn_danger:hover {
   background: var(--dangerHover);
 }
-.btn.btn_indigo {
+.btn_indigo {
   background: var(--indigo);
 }
-.btn.btn_indigo:hover {
+.btn_indigo:hover {
   background: var(--indigoHover);
 }
-.btn.btn_success {
+.btn_success {
   background: var(--success);
 }
-.btn.btn_success:hover {
+.btn_success:hover {
   background: var(--successHover);
 }
 ::placeholder {
@@ -94,7 +94,7 @@ button {
   font-size: 15px;
 }
 body::-webkit-scrollbar {
-  width: 4px;
+  width: 5px;
   background: var(--bgColor);
 }
 body::-webkit-scrollbar-thumb {

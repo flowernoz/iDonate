@@ -1,14 +1,13 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
+import "./style.css";
 import { IconMenu2 } from "@tabler/icons-react";
 import { MyBooleanContext } from "../../context";
-import "./style.css";
 import logo from "../../assets/applogo.png";
 import {
   IconCaretDown,
   IconCashBanknote,
   IconLogout,
 } from "@tabler/icons-react";
-import { useState } from "react";
 
 function Header() {
   const [openModal, setOpenmodal] = useState(false);
@@ -32,7 +31,12 @@ function Header() {
             <button>
               <IconCashBanknote /> 20 000.00 UZS
             </button>
-            <button>
+            <button
+              onClick={() => {
+                localStorage.removeItem("token");
+                window.location.reload();
+              }}
+            >
               <IconLogout /> Chiqish
             </button>
           </div>

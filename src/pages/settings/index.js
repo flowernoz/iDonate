@@ -31,8 +31,8 @@ function Settings() {
   return (
     <div>
       <p className="title">Vidjet sozlamalari</p>
-      <form>
-        <label>GIFni o'zgartirish (max 1 mb)</label>
+      <form className="form">
+        <label className="label">GIFni o'zgartirish (max 1 mb)</label>
         {imageUrl && (
           <img className="setting_gif" src={imageUrl} alt="your profile gif" />
         )}
@@ -40,8 +40,8 @@ function Settings() {
         {errorMessage && <span className="error">{errorMessage}</span>}
         <button className="btn btn_success">Saqlash</button>
       </form>
-      <form>
-        <label>Tovushni o'zgartirish</label>
+      <form className="form">
+        <label className="label">Tovushni o'zgartirish</label>
         {audioUrl && (
           <audio
             className="setting_audio"
@@ -53,8 +53,8 @@ function Settings() {
         <input accept="audio/*" onChange={handleAudio} type="file" />
         <button className="btn btn_success">Saqlash</button>
       </form>
-      <form>
-        <label>strim uchun havola</label>
+      <form className="form">
+        <label className="label">strim uchun havola</label>
         <input
           type="text"
           placeholder="https://idonate.uz/stream?token=xWOhVJGPwX37nbu4TfRsvmAptrjg6LlC"

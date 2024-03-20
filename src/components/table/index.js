@@ -1,5 +1,6 @@
 import "./style.css";
 import { IconMinus } from "@tabler/icons-react";
+
 function Table({ title, data }) {
   return (
     <div className="table_container">
@@ -18,8 +19,9 @@ function Table({ title, data }) {
           {data?.map((i, inx) => (
             <tr key={inx}>
               <td>{inx + 1}</td>
-              <td title={i?.ism}>{i.ism ? i.ism : <IconMinus />}</td>
-              <td title={i?.tolov}>{i.tolov ? i.tolov : <IconMinus />}</td>
+              {Object.values(i).map((item, index) => (
+                <td key={index}>{item || <IconMinus />}</td>
+              ))}
             </tr>
           ))}
         </tbody>
