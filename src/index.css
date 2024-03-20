@@ -101,17 +101,14 @@ body::-webkit-scrollbar-thumb {
   background: #ccc;
   border-radius: 4px;
 }
-.charts::-webkit-scrollbar,
-.table_container::-webkit-scrollbar {
+.charts::-webkit-scrollbar{
   width: 2px;
   height: 3px;
 }
-.charts::-webkit-scrollbar-track,
-.table_container::-webkit-scrollbar-track {
+.charts::-webkit-scrollbar-track{
   background: var(--bgLight);
 }
-.charts::-webkit-scrollbar-thumb,
-.table_container::-webkit-scrollbar-thumb {
+.charts::-webkit-scrollbar-thumb{
   background: var(--logo);
   height: 2px;
   width: 2px;
