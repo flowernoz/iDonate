@@ -6,7 +6,7 @@ function TopDonators() {
       <p className="title">Top donaterlar</p>
       <Table
         title={["Ismi", "To'lagan summa"]}
-        data={[{ ism: "Guli", tolov: 100 }]}
+        data={[{ ism: "Guli", tolov: "" }]}
       />
     </div>
   );
