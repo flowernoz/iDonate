@@ -45,7 +45,7 @@
     .container {
       height: 100vh;
       flex-direction: column;
-      justify-content: space-between !important;
+      justify-content: space-between;
     }
     .container > * {
       width: 100%;
@@ -108,7 +108,6 @@
   }
   .chart {
     min-width: 400px;
-    cursor: zoom-in;
     padding-bottom: 20px;
   }
   .footer {
@@ -121,7 +120,7 @@
   .setting_gif {
     max-width: 100%;
   }
-  .setting_audio{
+  .setting_audio {
     height: 40px;
   }
 }
