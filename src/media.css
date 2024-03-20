@@ -50,9 +50,6 @@
     .container > * {
       width: 100%;
     }
-    :after {
-      background-blend-mode: multiply;
-    }
     .login_left {
       height: 100%;
       background: var(--bgLight);
