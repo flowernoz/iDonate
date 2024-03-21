@@ -1,6 +1,6 @@
 import { Navigate } from "react-router-dom";
 import Auth from "./pages/auth";
-import Layout from "./routes/Layout";
+import Layout from "./layout";
 
 function App() {
   const auth = localStorage.getItem("token");

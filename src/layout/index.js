@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Routes, Route } from "react-router-dom";
-import { RootRoutes } from "./index";
+import { RootRoutes } from "../routes/index";
 import { Footer, Header, Sidebar } from "../components";
 import { MyBooleanContext } from "../context";
 import useScrollToTop from "../hooks/scrollToTop";
@@ -9,7 +9,7 @@ function Layout() {
   const width = window.innerWidth <= 1100;
   const { isToggled, toggle } = useContext(MyBooleanContext);
   const scrollToTop = useScrollToTop();
-    return (
+  return (
     <div className="App">
       <div className="container">
         {scrollToTop} <Sidebar />
