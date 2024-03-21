@@ -59,7 +59,7 @@
       align-items: center;
       justify-content: center;
       padding: 20px 0;
-      background: url(./assets/login-bg.jpeg);
+      background: url(../assets/login-bg.jpeg);
       background-size: cover;
       background-blend-mode: multiply;
       background-position: top;
