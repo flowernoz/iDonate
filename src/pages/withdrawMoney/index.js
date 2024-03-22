@@ -1,5 +1,5 @@
 import "./style.css";
-import Table from "../../components/table";
+import {Table} from "../../components";
 function WithdrawMoney() {
   return (
     <div className="withdrawMoney">
