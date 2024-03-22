@@ -67,9 +67,6 @@
   }
 }
 @media (max-width: 650px) {
-  section {
-    padding: 20px;
-  }
   .title {
     margin-bottom: 20px;
   }
@@ -113,12 +110,7 @@
     height: 40px;
   }
 }
-@media (max-width: 400px) {
-  textarea,
-  .form input {
-    padding: 8px;
-    font-size: 12px;
-  }
+@media (max-width: 350px) {
   th,
   td {
     font-size: 12px;
@@ -132,7 +124,6 @@
     font-size: 13px;
   }
   section {
-    padding: 15px 15px 25px;
-    margin: 8px 8px 30px;
+    padding: 25px 15px;
   }
 }
