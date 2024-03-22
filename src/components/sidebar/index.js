@@ -7,7 +7,6 @@ import { data } from "../../static/links";
 
 export default function Sidebar() {
   const { isToggled } = useContext(MyBooleanContext);
-  const width = window.innerWidth <= 700;
   return (
     <aside
       className="sidebar"

@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import "./style.css";
 import { IconMenu2 } from "@tabler/icons-react";
 import { MyBooleanContext } from "../../context";
@@ -12,6 +12,18 @@ import {
 function Header() {
   const [openModal, setOpenmodal] = useState(false);
   const { toggle } = useContext(MyBooleanContext);
+  const modalRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (modalRef.current && !modalRef.current.contains(event.target)) {
+      setOpenmodal(false);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside); 
+  }, []); 
+
   return (
     <header>
       <div className="head_left">
@@ -22,7 +34,11 @@ function Header() {
         <IconMenu2 onClick={toggle} />
       </div>
       <>
-        <button onClick={() => setOpenmodal(!openModal)} className="test">
+        <button
+          ref={modalRef}
+          onClick={() => setOpenmodal(!openModal)}
+          className="test"
+        >
           <img className="logo" src={logo} alt="logo" /> Test
           <IconCaretDown />
         </button>
